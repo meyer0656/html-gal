@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>HTML Gallery</title>
 </head>
@@ -26,7 +27,12 @@
         </div>
         <div class="credit" id="credit">Photographer's Name and Agency</div>
 
-        <div class="count"></div>
+        <div class="count">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i> Previous | Next
+            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+
+
+        </div>
 
         <div class="thumbs">
             <ul id="thumbs">
@@ -52,9 +58,13 @@
             <p>
                 To-do List:
                 <ul>
-                    <li>Change thumbnail opacity of active photo to 100.</li>
+                    <li><strike>Change thumbnail opacity of active photo to 100.</strike></li>
+                    <ul>
+                        <li>Once an image is selected, hover functionality breaks.</li>
+                    </ul>
                     <li>Max-width of photo should be 1024px. Image should center in frame with vertical alignment set to
                         middle.</li>
+                    <li><strike>Change page margins to 60px instead of page width equal to 90%</strike></li>
                     <li>Add Nav buttons to right column.</li>
                     <li>Overflow for thumnails isn't working.</li>
                     <li>Allow use of left and right arrow keys for navigation.</li>
@@ -67,6 +77,7 @@
             </p>
         </div>
     </div>
+    <script src="https://use.fontawesome.com/ea5c3f9cfe.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="gallery.js"></script>
 </body>
