@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>HTML Gallery</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Tampa Bay Times</h2>
+        </div>
+
+        <div class="photo">
+            <!--Full Size Image Container-->
+            <img src="https://via.placeholder.com/2048x1536/FF0000" class="full" id="1">
+            <img src="https://via.placeholder.com/2048x1536/FF7F00" class="full" id="2">
+            <img src="https://via.placeholder.com/2048x1536/FFFF00" class="full" id="3">
+            <img src="https://via.placeholder.com/2048x1536/00FF00" class="full" id="4">
+            <img src="https://via.placeholder.com/2048x1536/0000FF" class="full" id="5">
+            <img src="https://via.placeholder.com/2048x1536/4B0082" class="full" id="6">
+            <img src="https://via.placeholder.com/2048x1536/8B00FF" class="full" id="7">
+        </div>
+        <div class="ad">
+            <img src="https://via.placeholder.com/300x250" class="center">
+        </div>
+        <div class="credit" id="credit">Photographer's Name and Agency</div>
+
+        <div class="count"></div>
+
+        <div class="thumbs">
+            <ul id="thumbs">
+                <li id="1"><img src="https://via.placeholder.com/80x60/FF0000" class="little" id="1"
+                        onClick="swapPhoto(this)"></li>
+                <li id="2"><img src="https://via.placeholder.com/80x60/FF7F00" class="little" id="2"
+                        onClick="swapPhoto(this)"></li>
+                <li id="3"><img src="https://via.placeholder.com/80x60/FFFF00" class="little" id="3"
+                        onClick="swapPhoto(this)"></li>
+                <li id="4"><img src="https://via.placeholder.com/80x60/00FF00" class="little" id="4"
+                        onClick="swapPhoto(this)"></li>
+                <li id="5"><img src="https://via.placeholder.com/80x60/0000FF" class="little" id="5"
+                        onClick="swapPhoto(this)"></li>
+                <li id="6"><img src="https://via.placeholder.com/80x60/4B0082" class="little" id="6"
+                        onClick="swapPhoto(this)"></li>
+                <li id="7"><img src="https://via.placeholder.com/80x60/8B00FF" class="little" id="7"
+                        onClick="swapPhoto(this)"></li>
+            </ul>
+        </div>
+
+        <div class="footer"></div>
+        <div class="todo">
+            <p>
+                To-do List:
+                <ul>
+                    <li>Change thumbnail opacity of active photo to 100.</li>
+                    <li>Max-width of photo should be 1024px. Image should center in frame with vertical alignment set to
+                        middle.</li>
+                    <li>Add Nav buttons to right column.</li>
+                    <li>Overflow for thumnails isn't working.</li>
+                    <li>Allow use of left and right arrow keys for navigation.</li>
+                    <br>
+                    <li>Mobile Features:</li>
+                    <li>Add swipe feature.</li>
+                    <li>Add media query breakpoints.</li>
+
+                </ul>
+            </p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+
+</html>

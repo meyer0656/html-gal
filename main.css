@@ -1,0 +1,98 @@
+body {
+    max-width: 90%;
+    margin: auto;
+    background: #1e2227;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header {
+    grid-area: header;
+}
+
+.photo {
+    grid-area: photo;
+    /* width: 100%; */
+    object-fit: contain;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.full {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+.ad {
+    grid-area: ad;
+    padding: 0 0 0 60;
+    width: 300px;
+}
+
+.credit {
+    grid-area: credit;
+    padding: 30 0 0 60;
+}
+
+.todo {
+    grid-area: todo;
+    background: white;
+    color: black;
+    margin: 60 0 0 0;
+    padding: 30;
+}
+
+.thumbs {
+    grid-area: thumbs;
+    margin: 0 0 0 0;
+    padding: 30 0 0 0;
+    overflow: hidden;
+}
+
+#thumbs {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.little {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    overflow: hidden;
+}
+
+.thumbs ul li {
+    display: inline;
+}
+
+.little:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100)
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: (auto 360px);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "header header" 
+        "photo ad"
+        "photo credit"
+        "thumbs credit" 
+        "footer footer"
+        "todo todo";
+}
